@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="code.html"> <img src="logo new.png" alt="" width="125px"> </a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="code.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <!-- <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li> -->
+                    <li><a href="login.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" alt="" width="30px " height="30px">
+            <img src="images/menu.png" alt="" class="menuicon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-- cart page -->
+
+    <div class="smallcontainer cartpage">
+
+        <table>
+            <tr>
+                <th>
+              Product
+                </th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td> <div class="cartinfo">
+                    <img src="images/buy-1.jpg" alt="">
+                    <div>
+                        <p>Red Printed t-shirt</p>
+                        <small>Price: Rs. 299.00</small> <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div></td>
+                <td> <input type="text" value="1"></td>
+                <td>Rs. 299.00</td>
+            </tr>
+
+            <tr>
+                <td> <div class="cartinfo">
+                    <img src="images/product-10.jpg" alt="">
+                    <div>
+                        <p>lucchi black sneakers</p>
+                        <small>Price: Rs. 770.00</small> <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div></td>
+                <td> <input type="text" value="1"></td>
+                <td>Rs. 770.00</td>
+            </tr>
+
+            <tr>
+                <td> <div class="cartinfo">
+                    <img src="images/buy-2.jpg" alt="">
+                    <div>
+                        <p>JCB BLACK SHOES</p>
+                        <small>Price: Rs. 359.00</small> <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div></td>
+                <td> <input type="text" value="1"></td>
+                <td>Rs. 359.00</td>
+            </tr>
+
+            <tr>
+                <td> <div class="cartinfo">
+                    <img src="images/buy-3.jpg" alt="">
+                    <div>
+                        <p>VIMAL ELIACHI TRACKPANTS</p>
+                        <small>Price: Rs. 499.00</small> <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div></td>
+                <td> <input type="text" value="1"></td>
+                <td>Rs. 499.00</td>
+            </tr>
+        </table>
+
+        <div class="totalprice">
+            <table>
+                <tr>
+                    <td>subtotal</td>
+                    <td>Rs. 1299.00</td>
+                </tr>
+
+                <tr>
+                    <td>tax</td>
+                    <td>Rs. 50.00</td>
+                </tr>
+
+                <tr>
+                    <td>subtotal</td>
+                    <td>Rs. 1349.00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footercol1">
+                    <h3>Download Our App</h3>
+                    <p>Download it for ANDROID and IOS</p>
+                    <div class="applogo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+
+                <div class="footercol2">
+                    <img src="logo new.png" alt="">
+                    <p>Our purpose is to make everything available to you Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Qui, praesentium?</p>
+                </div>
+                <div class="footerclo3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blogs</li>
+                        <li>Return Policy</li>
+                        <li>Join</li>
+                    </ul>
+                </div>
+                <div class="footercol4">
+                    <h3>Social Media</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div>
+                <hr>
+                <p class="copyright">COPYRIGHT 2020 - Arjit Gupta</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- js for toggle menu -->
+
+    <script>
+        var menuitems = document.getElementById("menuitems");
+
+        menuitems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (menuitems.style.maxHeight == "0px") {
+                menuitems.style.maxHeight = "200px";
+            }
+
+            else {
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
